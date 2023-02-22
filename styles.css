@@ -1,0 +1,61 @@
+body{
+    margin: 0px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.head {
+    background-color: #95CEFF;
+    padding: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: 800;
+    width: 100%;
+    top: 0;
+}
+
+.rules-box {
+    background-color: #95CEFF;
+    padding-top: 10px;
+    text-align: center;
+    padding: 10px 100px 20px 10px;
+    margin: 0px;
+    width: 100%;
+}
+
+.game-box {
+    background-color: #95CEFF;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    column-gap: 3em;
+    row-gap: 10px;
+}
+
+.game-box img {
+height: 100px;
+
+   
+}
+
+.scoreboard {
+    background-color: #9599FF;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: #95CEFF;
+    bottom: 0%;
+    text-align: center;
+    width: 100%;
+
+}
+
+footer img {
+    height: 30px;
+    text-decoration: none;
+    
+}

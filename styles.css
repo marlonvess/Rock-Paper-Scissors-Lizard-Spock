@@ -10,7 +10,8 @@ body{
     font-size: large;
     font-weight: 800;
     width: 100%;
-    top: 0;
+    top: 100%;
+
 }
 
 .rules-box {
@@ -35,6 +36,8 @@ body{
 
 .game-box img {
 height: 100px;
+display: block;
+position: relative;
 
    
 }
@@ -48,10 +51,12 @@ height: 100px;
 
 footer {
     background-color: #95CEFF;
-    bottom: 0%;
     text-align: center;
     width: 100%;
-
+    padding: 10px;
+    bottom: 0;
+    position: fixed;
+    padding: 15px;
 }
 
 footer img {

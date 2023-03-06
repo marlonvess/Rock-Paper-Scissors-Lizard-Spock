@@ -23,7 +23,7 @@ body{
     width: 100%;
 }
 
-.game-box {
+#gameBox {
     background-color: #95CEFF;
     padding-top: 10px;
     display: flex;
@@ -34,18 +34,17 @@ body{
     row-gap: 10px;
 }
 
-.game-box img {
-height: 100px;
-display: block;
-position: relative;
 
-   
+#gameBox img {
+height: 100px;
+
 }
 
 .scoreboard {
     background-color: #9599FF;
     padding: 10px;
-    width: 100%;
+    margin: 150px 40px 80px 90px;
+    width: 80%;
     text-align: center;
 }
 

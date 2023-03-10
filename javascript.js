@@ -13,9 +13,10 @@ let cpuPoints = 0;
 
 
 function playRound () {
-    let playerSelection;
-    let cpuNumber = getComputerChoice();
-console.log (playerSelection,cpuNumber)
+
+    let playerSelection = Number (window.prompt("Escolha uma Opção""0 = Rock 1 = Paper 2 = Scissors 3 = Lizard 4 = Spock")) //get player choice
+    let cpuNumber = getComputerChoice(); //get CPU Choice
+
     if (playerSelection == cpuNumber) {
         return `Tie!`;
         
@@ -52,26 +53,20 @@ console.log (playerSelection,cpuNumber)
 
 }
 
-
-//Player Choice - The Game playeable only via browser console
-
-
-//Show winner:
+//Show winner running the looping for best of 5 turns
 function game () {
  for (let i = 0; i < 5; i++) {
-
  console.log (playRound())
  }
  if (playerPoints > cpuPoints) 
  {
-    return `You defeat the CPU`
+    alert `Good Ending:You defeat the CPU`
  } else if (playerPoints < cpuPoints) {
-    return `Bad Ending: The machines took control`
+    alert `Bad Ending: The machines took control`
  }
  else if (playerPoints = cpuPoints) {
-    return `No winner or loser this time, try again`
+    alert `No winner or loser this time, try again`
  }
-
 }
 
 console.log (game())

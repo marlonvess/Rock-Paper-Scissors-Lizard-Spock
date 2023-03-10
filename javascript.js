@@ -4,50 +4,48 @@ function getComputerChoice () {
  return cpuChoice 
 }
 
-
 // 0 = Rock     1 = Paper   2 = Scissors    3 = Lizard      4 = Spock
 
 //Options based on above numbers, game rules were applied in the conditional below:
 let playerPoints = 0;
 let cpuPoints = 0;
 
-
 function playRound () {
-
-    let playerSelection = Number (window.prompt("Escolha uma Opção""0 = Rock 1 = Paper 2 = Scissors 3 = Lizard 4 = Spock")) //get player choice
+    //get player choice:
+    let playerSelection = Number(window.prompt("Choose an option below:","0 = Rock 1 = Paper 2 = Scissors 3 = Lizard 4 = Spock")); 
     let cpuNumber = getComputerChoice(); //get CPU Choice
 
     if (playerSelection == cpuNumber) {
-        return `Tie!`;
+        alert `Tie!`;
         
     } 
     //Increase player 1 point for victory
     else if (playerSelection == 0 && (cpuNumber == 2 || cpuNumber == 3)) {
         ++playerPoints
-        return `You Win!`;
+        alert `You Win!`;
         
     }
     else if (playerSelection == 1 && (cpuNumber == 4 || cpuNumber == 0)) {
         ++playerPoints
-        return `You Win!`;
+        alert `You Win!`;
     }
     else if (playerSelection == 2 && (cpuNumber == 1 || cpuNumber == 3)) {
         ++playerPoints
-        return `You Win!`;
+        alert `You Win!`;
        
     }
     else if (playerSelection == 3 && (cpuNumber == 1 || cpuNumber == 4)) {
         ++playerPoints
-        return `You Win!`;
+        alert `You Win!`;
     }
     else if (playerSelection == 4 && (cpuNumber == 2 || cpuNumber == 0)) {
         ++playerPoints
-        return `You Win!`;
+        alert `You Win!`;
     }
     // Increase CPU 1 point
     else  {
         ++cpuPoints
-        return `You Lose!`;
+        alert `You Lose!`;
 
     }
 
@@ -57,6 +55,7 @@ function playRound () {
 function game () {
  for (let i = 0; i < 5; i++) {
  console.log (playRound())
+ alert (`Your Score ${playerPoints} | CPU score: ${cpuPoints}`)
  }
  if (playerPoints > cpuPoints) 
  {

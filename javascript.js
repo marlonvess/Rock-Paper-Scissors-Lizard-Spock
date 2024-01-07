@@ -42,7 +42,7 @@ function playRound () {
         ++playerPoints
         alert `You Win!`;
     }
-    // Increase CPU 1 point
+      // Increase CPU 1 point
     else  {
         ++cpuPoints
         alert `You Lose!`;
